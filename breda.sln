@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "breda", "breda.csproj", "{7E98A230-5784-432B-B3C9-A9BAEFCB6584}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E98A230-5784-432B-B3C9-A9BAEFCB6584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E98A230-5784-432B-B3C9-A9BAEFCB6584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E98A230-5784-432B-B3C9-A9BAEFCB6584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E98A230-5784-432B-B3C9-A9BAEFCB6584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CC51B630-35B2-468A-9F62-6D5E7E459133}
+	EndGlobalSection
+EndGlobal
