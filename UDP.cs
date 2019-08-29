@@ -18,10 +18,10 @@ namespace UDP
             public byte[] buffer = new byte[bufSize];
         }
 
-        public void Server(string address, int port)
+        public void Server(int port)
         {
             _socket.SetSocketOption(SocketOptionLevel.IP, SocketOptionName.ReuseAddress, true);
-            _socket.Bind(new IPEndPoint(IPAddress.Parse(address), port));
+            _socket.Bind(new IPEndPoint(IPAddress.Any, port));
             Receive();
         }
 

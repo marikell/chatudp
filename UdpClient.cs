@@ -1,11 +1,4 @@
-﻿/*
-C# Network Programming 
-by Richard Blum
-
-Publisher: Sybex 
-ISBN: 0782141765
-*/
-using System;
+﻿using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -23,12 +16,7 @@ public static class UdpClient
         Socket server = new Socket(AddressFamily.InterNetwork,
                        SocketType.Dgram, ProtocolType.Udp);
 
-
-        string welcome = "Hello, are you there?";
-        data = Encoding.ASCII.GetBytes(welcome);
-        server.SendTo(data, data.Length, SocketFlags.None, ipep);
-
-        IPEndPoint sender = new IPEndPoint(IPAddress.Any, 0);
+        IPEndPoint sender = new IPEndPoint(IPAddress.Any, port);
         EndPoint Remote = (EndPoint)sender;
 
         data = new byte[1024];

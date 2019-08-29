@@ -1,11 +1,4 @@
-﻿/*
-C# Network Programming 
-by Richard Blum
-
-Publisher: Sybex 
-ISBN: 0782141765
-*/
-using System;
+﻿using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -27,14 +20,6 @@ public static class UdpServer
         IPEndPoint sender = new IPEndPoint(IPAddress.Any, 0);
         EndPoint Remote = (EndPoint)(sender);
 
-        recv = newsock.ReceiveFrom(data, ref Remote);
-
-        Console.WriteLine("Message received from {0}:", Remote.ToString());
-        Console.WriteLine(Encoding.ASCII.GetString(data, 0, recv));
-
-        string welcome = "Welcome to my test server";
-        data = Encoding.ASCII.GetBytes(welcome);
-        newsock.SendTo(data, data.Length, SocketFlags.None, Remote);
         while (true)
         {
             data = new byte[1024];
