@@ -46,10 +46,7 @@
     <Compile Include="Models\State.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SocketUdp.cs" />
     <Compile Include="UDP.cs" />
-    <Compile Include="UdpClient.cs" />
-    <Compile Include="UdpServer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
